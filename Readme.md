@@ -1,6 +1,7 @@
 Use as following in docker compose file:
 TODO = add example init.sh...
-postgres_init:
+```
+  postgres_init:
     image: ghcr.io/phaf4it/docker-pg-client:main
     environment:
       PGDATABASE: database
@@ -17,3 +18,4 @@ postgres_init:
       - postgres
     command:
       - "insert.sh"
+```
